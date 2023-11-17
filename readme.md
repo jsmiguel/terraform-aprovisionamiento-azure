@@ -20,7 +20,7 @@ git clone https://github.com/[GITHUB-USER]/terraform-aprovisionamiento-azure.git
 
 
 # Move to cloned repository
-cd tterraform-aprovisionamiento-azure
+cd terraform-aprovisionamiento-azure
 ```
 
 ## 1 - MS SQL Server
