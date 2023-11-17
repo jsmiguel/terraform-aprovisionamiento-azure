@@ -12,7 +12,7 @@ git config --global user.email "example@gmail.com"
 git config --global user.name "Example"
 
 # Fork to you github space
-https://github.com/yolitals/terraform-aprovisionamiento-azure.git
+# https://github.com/yolitals/terraform-aprovisionamiento-azure.git
 
 # Clone the repository
 git clone https://github.com/[GITHUB-USER]/terraform-aprovisionamiento-azure.git
@@ -21,10 +21,11 @@ git clone https://github.com/[GITHUB-USER]/terraform-aprovisionamiento-azure.git
 
 # Move to cloned repository
 cd tterraform-aprovisionamiento-azure
+```
 
 ## 1 - MS SQL Server
 
-Create a SQL server and a database
+Create a SQL server and adatabase
 
 ```sh
 # Move to database directory
