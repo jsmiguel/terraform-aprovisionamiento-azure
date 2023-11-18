@@ -31,15 +31,15 @@ data "mssql_query" "table_exist" {
   SQL
 }
 output "table_exist" {
-    value = data.mssql_query.query.result
+    value = data.mssql_query.table_exist.result
 }
 
 # Query to get table's columns 
 data "mssql_query" "column" {
-  database_id = data.mssql_database.test.id
+  database_id = data.mssql_database.my-database.id
   query       = "SELECT [column_id], [name] FROM sys.columns WHERE [object_id] = OBJECT_ID('${var.table_name}')"
 }
 
 output "column_names" {
-  value = data.mssql_query.column.result[*].name
+  value = data.mssql_query.column.result
 }
